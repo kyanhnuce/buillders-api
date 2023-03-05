@@ -1,0 +1,15 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "Hello World",
+        "author": "John Doe"
+      },
+      {
+        "id": 2,
+        "title": "Lorem Ipsum",
+        "author": "Jane Smith"
+      }
+    ]
+  }
+  
