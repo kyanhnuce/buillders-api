@@ -1,15 +1,28 @@
 {
-    "posts": [
-      {
-        "id": 1,
-        "title": "Hello World",
-        "author": "John Doe"
-      },
-      {
-        "id": 2,
-        "title": "Lorem Ipsum",
-        "author": "Jane Smith"
-      }
-    ]
+    "items": {
+      "itemsSika": {
+        "concreteAdmixture": {
+          "title" : "Phụ Gia Bê Tông",
+          "sika-viscocrete": {
+            "title": "Phụ Gia Hóa Dẻo",
+            "sika-viscocrete-3000-20M": [
+              {
+                "id": 1, "title": "Sika Viscocrete 3000-20M", "author": "typicode"
+              }
+            ]
+          }
+        }
+      }, 
+      "itemsBasf": [
+        {
+          "id": 1, "title": "json-server", "author": "typicode"
+        }
+      ],
+      "itemsBifi": [
+        {
+          "id": 1, "title": "json-server", "author": "typicode"
+        }
+      ]
+    }
   }
   
