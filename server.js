@@ -66,17 +66,19 @@ server.use(middlewares)
 //   } 
 // });
 
-server.get('/departments/:departmentName/projects/:projectName', (req, res) => {
+server.get('/departments/:departmentName', (req, res) => {
   const departmentName = req.params.departmentName;
-  const projectName = req.params.projectName;
+  // const projectName = req.params.projectName;
   const department = _.find(router.db.get('departments').value(), { name: departmentName });
   if (department) {
-    const project = _.find(department.projects, { name: projectName });
-    if (project) {
-      res.json(project);
-    } else {
-      res.sendStatus(404);
-    }
+    res.json(department);
+    // const project = _.find(department.projects, { name: projectName });
+
+    // if (project) {
+    //   res.json(project);
+    // } else {
+    //   res.sendStatus(404);
+    // }
   } else {
     res.sendStatus(404);
   }
