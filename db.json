@@ -5,20 +5,17 @@
       "name": "sika-items",
       "title": "Phụ Gia Sika",
       "description": "Phụ Gia Sika ......",
-      "author": "typicode",
-      "admixture": [
+      "admixtures": [
         {
           "id": 1,
           "name": "sika-concrete-admixture",
           "title": "Phụ Gia Bê Tông",
-          "author": "typicode",
-          "data": [
+          "viscocretes": [
             {
               "id": 1,
               "name": "sika-viscocrete",
               "title": "Phụ Gia Hóa Dẻo",
-              "author": "typicode",
-              "data": [
+              "datas": [
                 {
                   "id": 1,
                   "name": "sika-viscocrete-3000-20M",

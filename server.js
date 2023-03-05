@@ -1,3 +1,4 @@
+const _ = require('lodash');
 const jsonServer = require('json-server')
 const server = jsonServer.create()
 const router = jsonServer.router('db.json')
@@ -19,19 +20,45 @@ server.use(middlewares)
 //   }
 // });
 
-// Custom route to handle GET /items/:departmentId/users/:userId
-server.get('/items/:name/admixture/:name/sika-viscocrete/:name', (req, res) => {
-  const name = req.params.name;
-  const item = router.db
-    .get('items')
-    .find({ name })
-    .get('admixture')
-    .find({ name })
-    .get('sika-viscocrete')
-    .find({ name })
-    .value();
+// // Custom route to handle GET /items/:departmentId/users/:userId
+// server.get('/items/:name/admixture/:name/sika-viscocrete/:name', (req, res) => {
+//   const name = req.params.name;
+//   const item = router.db
+//     .get('items')
+//     .find({ name })
+//     .get('admixture')
+//     .find({ name })
+//     .get('sika-viscocrete')
+//     .find({ name })
+//     .value();
+//   if (item) {
+//     res.json(item);
+//   } else {
+//     res.sendStatus(404);
+//   }
+// });
+
+server.get('/items/:itemName/admixtures/:admixtureName/viscocretes/:viscocreteName/datas/:dataName', (req, res) => {
+  const itemName = req.params.itemName;
+  const admixtureName = req.params.admixtureName;
+  const viscocreteName = req.params.viscocreteName;
+  const dataName = req.params.dataName;
+  const item = _.find(router.db.get('items').value(), { name: itemName });
   if (item) {
-    res.json(item);
+    const admixture = _.find(item.admixtures, { name: admixtureName });
+    if (admixture) {
+      const viscocrete = _.find(admixture.viscocretes, { name: viscocreteName });
+      if (viscocrete) {
+        const data = _.find(admixture.datas, { name: dataName });
+        if (data) {
+          res.json(data);
+        }
+      } else {
+        res.sendStatus(404);
+      }
+    } else {
+      res.sendStatus(404);
+    }
   } else {
     res.sendStatus(404);
   }
