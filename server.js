@@ -38,24 +38,42 @@ server.use(middlewares)
 //   }
 // });
 
-server.get('/items/:itemName/admixtures/:admixtureName/viscocretes/:viscocreteName/datas/:dataName', (req, res) => {
-  const itemName = req.params.itemName;
-  const admixtureName = req.params.admixtureName;
-  const viscocreteName = req.params.viscocreteName;
-  const dataName = req.params.dataName;
-  const item = _.find(router.db.get('items').value(), { name: itemName });
-  if (item) {
-    const admixture = _.find(item.admixtures, { name: admixtureName });
-    if (admixture) {
-      const viscocrete = _.find(admixture.viscocretes, { name: viscocreteName });
-      if (viscocrete) {
-        const data = _.find(admixture.datas, { name: dataName });
-        if (data) {
-          res.json(data);
-        }
-      } else {
-        res.sendStatus(404);
-      }
+// server.get('/items/:itemName/admixtures/:admixtureName/viscocretes/:viscocreteName/datas/:dataName', (req, res) => {
+//   const itemName = req.params.itemName;
+//   const admixtureName = req.params.admixtureName;
+//   const viscocreteName = req.params.viscocreteName;
+//   const dataName = req.params.dataName;
+//   const item = _.find(router.db.get('items').value(), { name: itemName });
+//   if (item) {
+//     const admixture = _.find(item.admixtures, { name: admixtureName });
+//     if (admixture) {
+//       const viscocrete = _.find(admixture.viscocretes, { name: viscocreteName });
+//       if (viscocrete) {
+//         const data = _.find(admixture.datas, { name: dataName });
+//         if (data) {
+//           res.json(data);
+//         } else {
+//           res.sendStatus(404);
+//         }
+//       } else {
+//         res.sendStatus(404);
+//       }
+//     } else {
+//       res.sendStatus(404);
+//     }
+//   } else {
+//     res.sendStatus(404);
+//   } 
+// });
+
+server.get('/departments/:departmentName/projects/:projectName', (req, res) => {
+  const departmentName = req.params.departmentName;
+  const projectName = req.params.projectName;
+  const department = _.find(router.db.get('departments').value(), { name: departmentName });
+  if (department) {
+    const project = _.find(department.projects, { name: projectName });
+    if (project) {
+      res.json(project);
     } else {
       res.sendStatus(404);
     }
@@ -63,6 +81,12 @@ server.get('/items/:itemName/admixtures/:admixtureName/viscocretes/:viscocreteNa
     res.sendStatus(404);
   }
 });
+
+server.use(router);
+server.listen(3000, () => {
+  console.log('JSON Server is running');
+});
+
 
 server.use(router)
 server.listen(process.env.PORT || 3000, () => {

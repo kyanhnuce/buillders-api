@@ -1,49 +1,60 @@
 {
-  "items": [
+  "departments": [
     {
       "id": 1,
-      "name": "sika-items",
-      "title": "Phụ Gia Sika",
-      "description": "Phụ Gia Sika ......",
-      "admixtures": [
+      "name": "IT",
+      "users": [
         {
           "id": 1,
-          "name": "sika-concrete-admixture",
-          "title": "Phụ Gia Bê Tông",
-          "viscocretes": [
-            {
-              "id": 1,
-              "name": "sika-viscocrete",
-              "title": "Phụ Gia Hóa Dẻo",
-              "datas": [
-                {
-                  "id": 1,
-                  "name": "sika-viscocrete-3000-20M",
-                  "title": "Sika Viscocrete 3000-20M",
-                  "author": "typicode"
-                }
-              ]
-            }
-          ]
+          "name": "John Doe",
+          "email": "johndoe@example.com"
+        },
+        {
+          "id": 2,
+          "name": "Jane Smith",
+          "email": "janesmith@example.com"
         }
       ],
-      "itemsBasf": [
+      "projects": [
         {
           "id": 1,
-          "title": "json-server",
-          "author": "typicode"
+          "name": "Project A",
+          "description": "This is project A"
+        },
+        {
+          "id": 2,
+          "name": "Project B",
+          "description": "This is project B"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "HR",
+      "users": [
+        {
+          "id": 3,
+          "name": "Bob Johnson",
+          "email": "bobjohnson@example.com"
+        },
+        {
+          "id": 4,
+          "name": "Mary Brown",
+          "email": "marybrown@example.com"
         }
       ],
-      "itemsBifi": [
+      "projects": [
         {
-          "id": 1,
-          "title": "json-server",
-          "author": "typicode"
+          "id": 3,
+          "name": "Project C",
+          "description": "This is project C"
+        },
+        {
+          "id": 4,
+          "name": "Project D",
+          "description": "This is project D"
         }
       ]
     }
-  ],
-  "posts": [{ "id": 1, "title": "json-server", "author": "typicode" }],
-  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
-  "profile": { "name": "typicode" }
+  ]
 }
