@@ -5,15 +5,15 @@ const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
 
-// Custom route to handle GET /users/:username
+// Custom route to handle GET /items/:name
 server.get('/items/:name/:name/:name/:name', (req, res) => {
-  const username = req.params.username;
-  const user = router.db
+  const name = req.params.name;
+  const items = router.db
     .get('items')
-    .find({ username })
+    .find({ name })
     .value();
-  if (user) {
-    res.json(user);
+  if (items) {
+    res.json(items);
   } else {
     res.sendStatus(404);
   }
