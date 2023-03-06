@@ -1,4 +1,34 @@
 {
+  "items": [
+    {
+      "id": 1,
+      "name": "sika",
+      "title": "Phụ Gia Sika",
+      "description": "Phụ Gia Sika ......123",
+      "admixtures": [
+        {
+          "id": 1,
+          "name": "sika-concrete-admixture",
+          "title": "Phụ Gia Bê Tông",
+          "viscocretes": [
+            {
+              "id": 1,
+              "name": "sika-viscocrete",
+              "title": "Phụ Gia Hóa Dẻo",
+              "datas": [
+                {
+                  "id": 1,
+                  "name": "sika-viscocrete-3000-20M",
+                  "title": "Sika Viscocrete 3000-20M",
+                  "author": "typicode"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
   "departments": [
     {
       "id": 1,
@@ -7,7 +37,7 @@
         {
           "id": 1,
           "name": "John Doe",
-          "email": "johndoe@example.c"
+          "email": "johndoe@example.com"
         },
         {
           "id": 2,
