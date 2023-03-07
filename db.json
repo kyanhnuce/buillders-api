@@ -2,87 +2,27 @@
   "items": [
     {
       "id": 1,
-      "name": "sika",
-      "title": "Phụ Gia Sika",
-      "description": "Phụ Gia Sika ......123",
-      "admixtures": [
+      "name": "sika-solutions",
+      "title": "Sika Solutions",
+      "description": "Các sản phẩm của Sika là thị trường Châu Âu",
+      "data": [
         {
           "id": 1,
-          "name": "sika-concrete-admixture",
-          "title": "Phụ Gia Bê Tông",
-          "viscocretes": [
-            {
-              "id": 1,
-              "name": "sika-viscocrete",
-              "title": "Phụ Gia Hóa Dẻo",
-              "datas": [
-                {
-                  "id": 1,
-                  "name": "sika-viscocrete-3000-20M",
-                  "title": "Sika Viscocrete 3000-20M",
-                  "author": "typicode"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "departments": [
-    {
-      "id": 1,
-      "name": "IT",
-      "users": [
-        {
-          "id": 1,
-          "name": "John Doe",
-          "email": "johndoe@example.com"
+          "name": "sika-viscocrete-3000-20M",
+          "title": "Sika Viscocrete 3000-20M",
+          "description": "Phụ gia giảm nước cao cấp"
         },
         {
           "id": 2,
-          "name": "Jane Smith",
-          "email": "janesmith@example.com"
-        }
-      ],
-      "projects": [
-        {
-          "id": 1,
-          "name": "Project A",
-          "description": "This is project A"
+          "name": "sika-viscocrete-3020-PR",
+          "title": "Sika Viscocrete 3020 PR",
+          "description": "Phụ gia giảm nước mức cao cho bê tông"
         },
-        {
-          "id": 2,
-          "name": "Project B",
-          "description": "This is project B"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "name": "HR",
-      "users": [
         {
           "id": 3,
-          "name": "Bob Johnson",
-          "email": "bobjohnson@example.com"
-        },
-        {
-          "id": 4,
-          "name": "Mary Brown",
-          "email": "marybrown@example.com"
-        }
-      ],
-      "projects": [
-        {
-          "id": 3,
-          "name": "Project C",
-          "description": "This is project C"
-        },
-        {
-          "id": 4,
-          "name": "Project D",
-          "description": "This is project D"
+          "name": "sika-viscocrete-3168",
+          "title": "Sika Viscocrete 3168",
+          "description": "phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao. "
         }
       ]
     }
