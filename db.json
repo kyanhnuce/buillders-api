@@ -24,6 +24,7 @@
             {
               "id": 112,
               "category": "admixture",
+              "like": true,
               "name": "sika-viscocrete-3020-PR",
               "title": "Sika Viscocrete 3020 PR",
               "description": "Phụ gia giảm nước mức cao cho bê tông",
@@ -65,6 +66,8 @@
             {
               "id": 222,
               "category": "admixture",
+              "like": true,
+
               "name": "basf-viscocrete-3020-PR",
               "title": "Basf Viscocrete 3020 PR",
               "description": "Phụ gia giảm nước mức cao cho bê tông",
