@@ -5,27 +5,78 @@
       "name": "sika-solutions",
       "title": "Sika Solutions",
       "description": "Các sản phẩm của Sika là thị trường Châu Âu",
-      "data": [
+      "info": [
         {
-          "id": 1,
-          "name": "sika-viscocrete-3000-20M",
-          "title": "Sika Viscocrete 3000-20M",
-          "description": "Phụ gia giảm nước cao cấp",
-          "images": "https://oct.vn/upload/files/Vat%20lieu%20sika/Phu-gia-be-tong-sika-viscocrete-3000-20M.jpg"
-        },
+          "id": 11,
+          "name": "sika-concrete-admixture",
+          "title": "Phụ gia bê tông Sika",
+          "description": "Bê tông, loại vật liệu xây dựng được sử dụng rộng rãi nhất trên thế giới, có lịch sử từ thời La Mã và Ai Cập cổ đại. Do bê tông được sử dụng nhiều gấp đôi trong xây dựng so với tất cả các vật liệu xây dựng khác, nên việc đánh mạnh vào chất lượng, hiệu suất và tính bền vững là điều cần thiết để ngành này phát triển. <wbr>Một trong những thành phần quan trọng nhất để sản xuất bê tông đạt hiệu suất cao, sử dụng lâu dài, bền và đẹp ngày nay chính là phụ gia bê tông. Phụ gia bê tông là các hóa chất hoặc phụ gia tự nhiên hoặc sản xuất được thêm vào trong quá trình trộn bê tông để tăng cường các đặc tính cụ thể của bê tông tươi hoặc đúc sẵn, chẳng hạn như khả năng công tác, tính duy trì, cường độ sớm và cường độ cuối.",
+          "data": [
+            {
+              "id": 111,
+
+              "name": "sika-viscocrete-3000-20M",
+              "title": "Sika Viscocrete 3000-20M",
+              "description": "Phụ gia giảm nước cao cấp",
+              "images": "https://oct.vn/upload/files/Vat%20lieu%20sika/Phu-gia-be-tong-sika-viscocrete-3000-20M.jpg"
+            },
+            {
+              "id": 112,
+
+              "name": "sika-viscocrete-3020-PR",
+              "title": "Sika Viscocrete 3020 PR",
+              "description": "Phụ gia giảm nước mức cao cho bê tông",
+              "images": "https://chongtham586.vn/wp-content/uploads/2020/06/Sigunit-L-1453-1.jpg"
+            },
+            {
+              "id": 113,
+
+              "name": "sika-viscocrete-3168",
+              "title": "Sika Viscocrete 3168",
+              "description": "phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao. ",
+              "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "basf-solutions",
+      "title": "Basf Solutions",
+      "description": "Các sản phẩm của Basf là thị trường Châu Âu",
+      "info": [
         {
-          "id": 2,
-          "name": "sika-viscocrete-3020-PR",
-          "title": "Sika Viscocrete 3020 PR",
-          "description": "Phụ gia giảm nước mức cao cho bê tông",
-          "images": "https://chongtham586.vn/wp-content/uploads/2020/06/Sigunit-L-1453-1.jpg"
-        },
-        {
-          "id": 3,
-          "name": "sika-viscocrete-3168",
-          "title": "Sika Viscocrete 3168",
-          "description": "phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao. ",
-          "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+          "id": 22,
+          "name": "basf-concrete-admixture",
+          "title": "Phụ gia bê tông Basf",
+          "description": "Bê tông, loại vật liệu xây dựng được sử dụng rộng rãi nhất trên thế giới, có lịch sử từ thời La Mã và Ai Cập cổ đại. Do bê tông được sử dụng nhiều gấp đôi trong xây dựng so với tất cả các vật liệu xây dựng khác, nên việc đánh mạnh vào chất lượng, hiệu suất và tính bền vững là điều cần thiết để ngành này phát triển. <wbr>Một trong những thành phần quan trọng nhất để sản xuất bê tông đạt hiệu suất cao, sử dụng lâu dài, bền và đẹp ngày nay chính là phụ gia bê tông. Phụ gia bê tông là các hóa chất hoặc phụ gia tự nhiên hoặc sản xuất được thêm vào trong quá trình trộn bê tông để tăng cường các đặc tính cụ thể của bê tông tươi hoặc đúc sẵn, chẳng hạn như khả năng công tác, tính duy trì, cường độ sớm và cường độ cuối.",
+          "data": [
+            {
+              "id": 221,
+
+              "name": "basf-viscocrete-3000-20M",
+              "title": "Basf Viscocrete 3000-20M",
+              "description": "Phụ gia giảm nước cao cấp",
+              "images": "https://oct.vn/upload/files/Vat%20lieu%20sika/Phu-gia-be-tong-sika-viscocrete-3000-20M.jpg"
+            },
+            {
+              "id": 222,
+
+              "name": "basf-viscocrete-3020-PR",
+              "title": "Basf Viscocrete 3020 PR",
+              "description": "Phụ gia giảm nước mức cao cho bê tông",
+              "images": "https://chongtham586.vn/wp-content/uploads/2020/06/Sigunit-L-1453-1.jpg"
+            },
+            {
+              "id": 223,
+
+              "name": "basf-viscocrete-3168",
+              "title": "Basf Viscocrete 3168",
+              "description": "phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao. ",
+              "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+            }
+          ]
         }
       ]
     }

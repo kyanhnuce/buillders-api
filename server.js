@@ -21,19 +21,18 @@ server.get('/echo', (req, res) => {
 //   next()
 // })
 
-// Endpoint cho việc tìm kiếm item theo query parameters
-server.get('/items/:name/search', (req, res) => {
+// [GET] /items/search?q=&type=less
+server.get('/items/search', (req, res) => {
   const { q, type } = req.query;
-  const name = req.params.name;
   if (q && type === 'less') {
     const results = router.db
       .get('items')
-      .find({ name })
-      .get('data')
+      .flatMap(item => item.info.flatMap(info => info.data))
       .filter(
         (result) =>
           result.name.toLowerCase().includes(q.toLowerCase()) ||
-          result.description.toLowerCase().includes(q.toLowerCase()),
+          result.title.toLowerCase().includes(q.toLowerCase()) ||
+          result.description.toLowerCase().includes(q.toLowerCase())
       )
       .slice(0, 5)
       .value();
@@ -42,19 +41,53 @@ server.get('/items/:name/search', (req, res) => {
 });
 
 server.use(jsonServer.bodyParser);
-server.use('/items/:name/data', (req, res, next) => {
-  const name = req.params.name;
+// [GET] /items/data
+server.use('/items/data', (req, res, next) => {
+
   if (req.method === 'GET') {
     const item = router.db
       .get('items')
-      .find({ name })
-      .get('data')
-      .filter((item) => item.name)
+      .flatMap((company) => company.data)
       .value();
     return res.json(item);
   }
   next();
 });
+
+// [GET] /items/info
+server.get('/items/info', (req, res) => {
+  const items = router.db.get('items').value();
+  const result = items.map(company => ({
+    id: company.info[0].id,
+    name: company.info[0].name,
+    title: company.info[0].title,
+  }));
+  res.jsonp(result);
+});
+
+// [GET] /items/search?q=&type=less
+server.get('/items/search-info', (req, res) => {
+  const { q, type } = req.query;
+  if (q && type === 'less') {
+    const items = router.db
+      .get('items')
+      .flatMap(company => ({
+        id: company.info[0].id,
+        search: company.info[0].search,
+        name: company.info[0].name,
+        title: company.info[0].title,
+        description: company.info[0].description,
+      }))
+      .filter(
+        (result) =>
+          encodeURI(result.title.toLowerCase().includes(q.toLowerCase()))
+      )
+      .slice(0, 5)
+      .value();
+    return res.json(items);
+  }
+});
+
 
 server.use(router);
 
