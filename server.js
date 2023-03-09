@@ -24,7 +24,7 @@ server.get('/echo', (req, res) => {
 // [GET] /items/search?q=&type=less
 server.get('/items/search', (req, res) => {
   const { q, type } = req.query;
-  if (q && type === 'less') {
+  if (q.length > 0 && type === 'less') {
     const results = router.db
       .get('items')
       .flatMap(item => item.info.flatMap(info => info.data))
@@ -37,17 +37,45 @@ server.get('/items/search', (req, res) => {
       .slice(0, 5)
       .value();
     return res.json(results);
-  }
+  } else if (q.length <= 0 ) [
+    res.json({message: "The given data was invalid.",
+    errors: {
+      "q": [
+        "The q field is required."
+      ]
+    },
+    status_code: 422})
+  ]
 });
 
 server.use(jsonServer.bodyParser);
-// [GET] /items/data
-server.use('/items/data', (req, res, next) => {
-
+// [GET] /items/data-name/:name
+server.get('/items/data-name/:name', (req, res) => {
+  const name = req.params.name
+    const itemName = router.db
+      .get('items')
+      .flatMap(item => item.info.flatMap(info => info.data))
+      .find({name})
+      .value();
+    return res.json(itemName)
+});
+// [GET] /items/data-like/:like
+server.get('/items/data-like/:like', (req, res) => {
+    const itemLike = router.db
+      .get('items')
+      .flatMap(item => item.info.flatMap(info => info.data))
+      .filter({like: true})
+      .value();
+    return res.json(itemLike)
+});
+// [GET] /items/data-category/:category
+server.use('/items/data-category/:category', (req, res, next) => {
+  const category = req.params.category
   if (req.method === 'GET') {
     const item = router.db
       .get('items')
-      .flatMap((company) => company.data)
+      .flatMap(item => item.info.flatMap(info => info.data))
+      .filter({category})
       .value();
     return res.json(item);
   }

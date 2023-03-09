@@ -14,7 +14,8 @@
           "data": [
             {
               "id": 111,
-
+              "category": "admixture",
+              "like": true,
               "name": "sika-viscocrete-3000-20M",
               "title": "Sika Viscocrete 3000-20M",
               "description": "Phụ gia giảm nước cao cấp",
@@ -22,7 +23,7 @@
             },
             {
               "id": 112,
-
+              "category": "admixture",
               "name": "sika-viscocrete-3020-PR",
               "title": "Sika Viscocrete 3020 PR",
               "description": "Phụ gia giảm nước mức cao cho bê tông",
@@ -30,7 +31,7 @@
             },
             {
               "id": 113,
-
+              "category": "admixture",
               "name": "sika-viscocrete-3168",
               "title": "Sika Viscocrete 3168",
               "description": "phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao. ",
@@ -54,7 +55,8 @@
           "data": [
             {
               "id": 221,
-
+              "category": "admixture",
+              "like": true,
               "name": "basf-viscocrete-3000-20M",
               "title": "Basf Viscocrete 3000-20M",
               "description": "Phụ gia giảm nước cao cấp",
@@ -62,7 +64,7 @@
             },
             {
               "id": 222,
-
+              "category": "admixture",
               "name": "basf-viscocrete-3020-PR",
               "title": "Basf Viscocrete 3020 PR",
               "description": "Phụ gia giảm nước mức cao cho bê tông",
@@ -70,7 +72,7 @@
             },
             {
               "id": 223,
-
+              "category": "admixture",
               "name": "basf-viscocrete-3168",
               "title": "Basf Viscocrete 3168",
               "description": "phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao. ",
