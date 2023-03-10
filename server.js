@@ -59,10 +59,12 @@ server.get('/items/data-name/:name', (req, res) => {
       .value();
     return res.json(itemName)
 });
-// [GET] /items/data-like/:like
-server.get('/items/data-like/:like', (req, res) => {
+// [GET] /items/:name/data-like/:like
+server.get('/items/:name/data-like/:like', (req, res) => {
+  const name = req.params.name
     const itemLike = router.db
       .get('items')
+      .find({name})
       .flatMap(item => item.info.flatMap(info => info.data))
       .filter({like: true})
       .value();

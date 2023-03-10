@@ -18,26 +18,204 @@
               "like": true,
               "name": "sika-viscocrete-3000-20M",
               "title": "Sika Viscocrete 3000-20M",
-              "description": "Phụ gia giảm nước cao cấp",
+              "keyword": "sika 3000 20m",
+              "description": "Phụ gia giảm nước cao cấp.",
               "images": "https://oct.vn/upload/files/Vat%20lieu%20sika/Phu-gia-be-tong-sika-viscocrete-3000-20M.jpg"
             },
             {
               "id": 112,
               "category": "admixture",
-              "like": true,
+              "like": false,
               "name": "sika-viscocrete-3020-PR",
               "title": "Sika Viscocrete 3020 PR",
-              "description": "Phụ gia giảm nước mức cao cho bê tông",
+              "keyword": "sika 3020",
+              "description": "Phụ gia giảm nước mức cao cho bê tông.",
               "images": "https://chongtham586.vn/wp-content/uploads/2020/06/Sigunit-L-1453-1.jpg"
             },
             {
               "id": 113,
-              "category": "admixture",
+              "category": "admixture",              
+              "like": false,
               "name": "sika-viscocrete-3168",
               "title": "Sika Viscocrete 3168",
-              "description": "phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao. ",
+              "keyword": "sika 3168",
+              "description": "Phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao.",
+              "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+            },
+            {
+              "id": 114,
+              "category": "admixture",
+              "like": false,
+              "name": "sika-plast-398-sf",
+              "title": "Sika Plast-398 SF",
+              "keyword": "sika 398",
+              "description": "PHỤ GIA SIÊU DẺO VÀ CHẬM ĐÔNG KẾT GỐC PCE CHO BÊ TÔNG.",
+              "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+            },
+            {
+              "id": 115,
+              "category": "admixture",
+              "like": false,
+              "name": "sikament-294",
+              "title": "Sikament-294",
+              "keyword": "sika 294",
+              "description": "Phụ gia kéo dài thời gian ninh kết và giảm nước cao cấp cho bê tông.",
               "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
             }
+          ]
+        },
+        {
+          "id": 12,
+          "name": "sika-grout",
+          "title": "Vữa rót Sika",
+          "description": "Vữa là tổ hợp các nguyên liệu gồm nước, xi măng và cát. Dùng để rót vào các khe dưới bê móng máy, hoặc cấu kiện, khe kết nối và khe lộ thiên hoặc gia dường trên một số các bề mặt khác.",
+          "data": [
+            {
+              "id": 121,
+              "category": "grout",
+              "like": true,
+              "name": "sika-grout-3200-vn",
+              "title": "SikaGrout®-3200 VN",
+              "keyword": "sika 3200 VN",
+              "description": "VỮA RÓT CHUYÊN DỤNG CHO THÁP ĐIỆN GIÓ TRÊN & GẦN BỜ, CÓ CHỨNG NHẬN KHÁNG MỎI",
+              "images": "https://oct.vn/upload/files/Vat%20lieu%20sika/Phu-gia-be-tong-sika-viscocrete-3000-20M.jpg"
+            },
+            {
+              "id": 122,
+              "category": "grout",
+              "like": false,
+              "name": "sika-grout-214-11",
+              "title": "SikaGrout®-214-11",
+              "keyword": "sika 214-11",
+              "description": "Vữa rót gốc xi măng, bù co ngót, có thể bơm được.",
+              "images": "https://chongtham586.vn/wp-content/uploads/2020/06/Sigunit-L-1453-1.jpg"
+            },
+            {
+              "id": 123,
+              "category": "grout",
+              "like": false,
+              "name": "sika-grout-gp",
+              "title": "SikaGrout® GP",
+              "keyword": "sika gp",
+              "description": "VỮA RÓT GỐC XI MĂNG, BÙ CO NGÓT, BƠM ĐƯỢC, DÙNG CHO MỤC ĐÍCH THÔNG DỤNG.",
+              "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+            },
+            {
+              "id": 124,
+              "category": "grout",
+              "like": false,
+              "name": "sika-grout-318",
+              "title": "SikaGrout®-318",
+              "keyword": "sika 318",
+              "description": "Vữa rót gốc xi măng, bù co ngót, đạt cường độ cao sớm.",
+              "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+            },
+            {
+              "id": 125,
+              "category": "grout",
+              "like": false,
+              "name": "sikament-280-hs",
+              "title": "SikaGrout®-280 HS",
+              "keyword": "sika 280 hs",
+              "description": "VỮA GỐC XI MĂNG BÙ CO NGÓT, ĐƯỢC GIA CƯỜNG CỐT LIỆU SỢI THÉP.",
+              "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "name": "sika-waterproofing",
+          "title": "Hệ thống chống thấm Sika",
+          "description": "Chống thấm là cách bảo vệ kết cấu của ngôi nhà, công trình chống lại sự xâm nhập của nước, điều thiệt hại tiêu tốn nhiều tiền và công sức khắc phục. Chống thấm dường như trở nên vô hình khi công trình hoàn thiện. Mỗi ngày, các tầng hầm của cao ốc, hay lớp ngoài cùng của những vách hầm chui tiếp xúc trực tiếp với sự dao động mạnh về  độ ẩm và nhiệt độ, tất cả đều góp phần làm hư hỏng cấu trúc của chúng. Đủ thấu hiểu, Sika cung cấp một hệ thống chống thấm lâu bền, giải pháp toàn diện cho mọi công trình xây dựng.",
+          "data": [
+            {
+              "id": 131,
+              "category": "waterproofing",
+              "like": true,
+              "name": "sika-waterbar-v-20-vn",
+              "title": "Sika Waterbar® V-20 VN",
+              "keyword": "sika v20 vn",
+              "description": "BĂNG CẢN NƯỚC ĐÀN HỒI, GỐC PVC.",
+              "images": "https://oct.vn/upload/files/Vat%20lieu%20sika/Phu-gia-be-tong-sika-viscocrete-3000-20M.jpg"
+            },
+            {
+              "id": 132,
+              "category": "waterproofing",
+              "like": false,
+              "name": "sika-bit-w-15",
+              "title": "SikaBit® W-15",
+              "keyword": "sika w15",
+              "description": "Màng chống thấm gốc bitum cải tiến, thi công ướt",
+              "images": "https://chongtham586.vn/wp-content/uploads/2020/06/Sigunit-L-1453-1.jpg"
+            },
+            {
+              "id": 133,
+              "category": "waterproofing",
+              "like": false,
+              "name": "sika-top-107-seal-vn",
+              "title": "SikaTop®-107 Seal VN",
+              "keyword": "sika 107",
+              "description": "Vữa chống thấm và bảo vệ đàn hồi.",
+              "images": "https://cdn.sika.com/cdn/Channel/PIM/02-en-vi-sikatop-107-seal-vn-1x1_hybrisProductImages.png"
+            },
+            {
+              "id": 134,
+              "category": "waterproofing",
+              "like": false,
+              "name": "sikalite",
+              "title": "Sikalite®",
+              "keyword": "sika lite",
+              "description": "Phụ gia chống thấm cho vữa với tính thi công cao.",
+              "images": "https://antienhung.vn/wp-content/uploads/2020/03/sika-viscocrete-3168-phu-gia-be-tong-sieu-hoa-deo.jpg"
+            },
+            {
+              "id": 135,
+              "category": "waterproofing",
+              "like": false,
+              "name": "sika-monotop-166-migrating",
+              "title": "Sika MonoTop®-166 Migrating",
+              "keyword": "sika 166",
+              "description": "CHỐNG THẤM GỐC XI-MĂNG TINH THỂ THẨM THẤU.",
+              "images": "https://cdn.sika.com/cdn/Channel/PIM/02-en_vi-sika-monotop-166-migrating-1x1_hybrisProductImages.png"
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "name": "sika-concrete-adhesives",
+          "title": "Chất kết dính Sika",
+          "description": "Việc sử dụng chất kết dính xây dựng để liên kết kết cấu và phi kết cấu trên các công trình xây dựng ngày càng được coi trọng do vật liệu mới, phương pháp xây dựng mới và áp lực thời gian ngày càng tăng. Các ví dụ bao gồm từ liên kết đơn giản như kết dính thanh gỗ, thạch cao hoặc các tấm cách nhiệt, đến liên kết của các yếu tố mặt dựng và gia cường kết cấu.",
+          "data": [
+            {
+              "id": 141,
+              "category": "concrete-adhesives",
+              "like": true,
+              "name": "sika-bond-124-instant-nails",
+              "title": "SikaBond®-124 Instant Nails",
+              "keyword": "sika 124",
+              "description": "CHẤT KẾT DÍNH ĐA NĂNG CHO XÂY DỰNG, KHÔNG NEO VÍT.",
+              "images": "https://cdn.sika.com/cdn/Channel/PIM/02-en_vn-SikaBond-124%20Instant%20Nails-01-1x1_hybrisProductImages.png"
+            },
+            {
+              "id": 142,
+              "category": "concrete-adhesives",
+              "like": false,
+              "name": "sika-flex-134-bond-seal",
+              "title": "Sikaflex®-134 Bond & Seal",
+              "keyword": "sika flex 134",
+              "description": "Chất trám khe kết dính đàn hồi đa công dụng.",
+              "images": "https://cdn.sika.com/cdn/Channel/PIM/02-en_vn-Sikaflex-134Bond&Seal-01-1x1_hybrisProductImages.png"
+            },
+            {
+              "id": 143,
+              "category": "concrete-adhesives",
+              "like": false,
+              "name": "sika-flex-11-fc+",
+              "title": "Sikaflex®-11 FC+",
+              "keyword": "sika 11",
+              "description": "CHẤT TRÁM KHE KẾT DÍNH ĐÀN HỒI GỐC PUR 1 THÀNH PHẦN.",
+              "images": "https://cdn.sika.com/cdn/Channel/PIM/02-en-vi-sikatop-107-seal-vn-1x1_hybrisProductImages.png"
+            }            
           ]
         }
       ]
@@ -66,8 +244,7 @@
             {
               "id": 222,
               "category": "admixture",
-              "like": true,
-
+              "like": false,
               "name": "basf-viscocrete-3020-PR",
               "title": "Basf Viscocrete 3020 PR",
               "description": "Phụ gia giảm nước mức cao cho bê tông",
@@ -76,6 +253,7 @@
             {
               "id": 223,
               "category": "admixture",
+              "like": false,
               "name": "basf-viscocrete-3168",
               "title": "Basf Viscocrete 3168",
               "description": "phụ gia siêu dẻo trên cơ sở phối trộn của polyme thế hệ thứ 3 để sản xuất bê tông mềm, xốp cường độ cao. ",
