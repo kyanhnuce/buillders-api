@@ -60,11 +60,10 @@ server.get('/items/data-name/:name', (req, res) => {
     return res.json(itemName)
 });
 // [GET] /items/:name/data-like/:like
-server.get('/items/:name/data-like/:like', (req, res) => {
+server.get('/items/data-like/:like', (req, res) => {
   const name = req.params.name
     const itemLike = router.db
       .get('items')
-      .find({name})
       .flatMap(item => item.info.flatMap(info => info.data))
       .filter({like: true})
       .value();
