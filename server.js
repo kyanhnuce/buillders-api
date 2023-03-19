@@ -59,16 +59,42 @@ server.get('/items/data-name/:name', (req, res) => {
       .value();
     return res.json(itemName)
 });
-// [GET] /items/:name/data-like/:like
-server.get('/items/data-like/:like', (req, res) => {
-  const name = req.params.name
+
+// [GET] /items/:title/info/data/:like
+server.get('/items/title', (req, res) => {
+    const titleItem = router.db
+      .get('items')
+      .flatMap(item => item.title)
+      .value();
+    return res.json(titleItem)
+});
+
+// [GET] /items/:title/info/data/:like
+server.get('/items/:title/data/:like', (req, res) => {
+  const title = req.params.title
     const itemLike = router.db
       .get('items')
-      .flatMap(item => item.info.flatMap(info => info.data))
+      .find({title: title})
+      .get('info')
+      .flatMap(info => info.data)
+      .filter({like: true})
+      .value();
+    return res.json({title: title, data: itemLike})
+});
+
+// [GET] /items/:title/info/data/:like
+server.get('/items/data/:like', (req, res) => {
+  const title = req.params.title
+    const itemLike = router.db
+      .get('items')
+      .find({title: title})
+      .get('info')
+      .flatMap(info => info.data)
       .filter({like: true})
       .value();
     return res.json(itemLike)
 });
+
 // [GET] /items/data-category/:category
 server.use('/items/data-category/:category', (req, res, next) => {
   const category = req.params.category
