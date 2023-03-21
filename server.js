@@ -57,7 +57,7 @@ server.get('/items/data-name/:name', (req, res) => {
       .flatMap(item => item.info.flatMap(info => info.data))
       .find({name})
       .value();
-    return res.json(itemName)
+    return res.json({data: [itemName]})
 });
 
 // [GET] /items/:title/info/data/:like
