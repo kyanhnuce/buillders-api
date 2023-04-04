@@ -62,6 +62,14 @@ server.get('/items/data-name/:name', (req, res) => {
     return res.json({data: [itemName]})
 });
 
+// [GET] /items/title
+server.get('/items/title', (req, res) => {
+  const titleItem = router.db
+    .get('items')
+    .flatMap(item => item.title)
+    .value();
+  return res.json(titleItem)
+});
 
 // [GET] /items/:title/data/:like
 server.get('/items/:title/data/:like', (req, res) => {
@@ -103,7 +111,7 @@ server.use('/items/:solution/:category/:name', (req, res, next) => {
       .get('data')
       .find({ name })
       .value();
-    return res.json(item);
+    return res.json({data: [item]});
   }
   next();
 });
