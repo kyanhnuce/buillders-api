@@ -338,7 +338,7 @@
             {
               "id": 141,
               "solution":"sika-solutions",
-              "category": "sika-concrete-adhesives",
+              "category": "sika-contruction-adhesives",
               "like": true,
               "name": "sika-bond-124-instant-nails",
               "title": "SikaBond®-124 Instant Nails",
@@ -357,7 +357,7 @@
             {
               "id": 142,
               "solution":"sika-solutions",
-              "category": "sika-concrete-adhesives",
+              "category": "sika-contruction-adhesives",
               "like": false,
               "name": "sika-flex-134-bond-seal",
               "title": "Sikaflex®-134 Bond & Seal",
@@ -376,7 +376,7 @@
             {
               "id": 143,
               "solution":"sika-solutions",
-              "category": "sika-concrete-adhesives",
+              "category": "sika-contruction-adhesives",
               "like": false,
               "name": "sika-flex-11-fc+",
               "title": "Sikaflex®-11 FC+",
