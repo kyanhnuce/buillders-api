@@ -32,7 +32,8 @@ server.get('/items/search', (req, res) => {
         (result) =>
           result.name.toLowerCase().includes(q.toLowerCase()) ||
           result.title.toLowerCase().includes(q.toLowerCase()) ||
-          result.description.toLowerCase().includes(q.toLowerCase())
+          result.description.toLowerCase().includes(q.toLowerCase()) || 
+          result.keyword.toLowerCase().includes(q.toLowerCase())
       )
       .slice(0, 5)
       .value();
@@ -49,6 +50,7 @@ server.get('/items/search', (req, res) => {
 });
 
 server.use(jsonServer.bodyParser);
+
 // [GET] /items/data-name/:name
 server.get('/items/data-name/:name', (req, res) => {
   const name = req.params.name
@@ -60,16 +62,8 @@ server.get('/items/data-name/:name', (req, res) => {
     return res.json({data: [itemName]})
 });
 
-// [GET] /items/:title/info/data/:like
-server.get('/items/title', (req, res) => {
-    const titleItem = router.db
-      .get('items')
-      .flatMap(item => item.title)
-      .value();
-    return res.json(titleItem)
-});
 
-// [GET] /items/:title/info/data/:like
+// [GET] /items/:title/data/:like
 server.get('/items/:title/data/:like', (req, res) => {
   const title = req.params.title
     const itemLike = router.db
@@ -82,18 +76,6 @@ server.get('/items/:title/data/:like', (req, res) => {
     return res.json({title: title, data: itemLike})
 });
 
-// [GET] /items/:title/info/data/:like
-server.get('/items/data/:like', (req, res) => {
-  const title = req.params.title
-    const itemLike = router.db
-      .get('items')
-      .find({title: title})
-      .get('info')
-      .flatMap(info => info.data)
-      .filter({like: true})
-      .value();
-    return res.json(itemLike)
-});
 
 // [GET] /items/data-category/:category
 server.use('/items/data-category/:category', (req, res, next) => {
@@ -109,15 +91,47 @@ server.use('/items/data-category/:category', (req, res, next) => {
   next();
 });
 
-// [GET] /items/info
-server.get('/items/info', (req, res) => {
-  const items = router.db.get('items').value();
-  const result = items.map(company => ({
-    id: company.info[0].id,
-    name: company.info[0].name,
-    title: company.info[0].title,
-  }));
-  res.jsonp(result);
+// [GET] /items/:solution/:category/:name
+server.use('/items/:solution/:category/:name', (req, res, next) => {
+  const { solution, category, name } = req.params;
+  if (req.method === 'GET') {
+    const item = router.db
+      .get('items')
+      .find({ name: solution })
+      .get('info')
+      .find({ name: category })
+      .get('data')
+      .find({ name })
+      .value();
+    return res.json(item);
+  }
+  next();
+});
+
+server.use('/items/:solution/:category', (req, res, next) => {
+  const { solution, category } = req.params;
+  if (req.method === 'GET') {
+    const item = router.db
+      .get('items')
+      .find({ name: solution })
+      .get('info')
+      .find({ name: category })
+      .value();
+    return res.json(item);
+  }
+  next();
+});
+
+server.use('/items/:solution', (req, res, next) => {
+  const { solution } = req.params;
+  if (req.method === 'GET') {
+    const item = router.db
+      .get('items')
+      .find({ name: solution })
+      .value();
+    return res.json(item);
+  }
+  next();
 });
 
 // [GET] /items/search?q=&type=less
