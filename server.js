@@ -56,7 +56,7 @@ server.get('/items/data-name/:name', (req, res) => {
   const name = req.params.name
     const itemName = router.db
       .get('items')
-      .flatMap(item => item.info.flatMap(info => info.data))
+      .map(item => item.info.map(info => info.data).flat()).flat()
       .find({name})
       .value();
     return res.json({data: [itemName]})
@@ -125,7 +125,7 @@ server.use('/items/:solution/:category', (req, res, next) => {
       .get('info')
       .find({ name: category })
       .value();
-    return res.json({info: [item]});
+      return res.json(item);
   }
   next();
 });
