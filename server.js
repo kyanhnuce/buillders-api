@@ -125,7 +125,7 @@ server.use('/items/:solution/:category', (req, res, next) => {
       .get('info')
       .find({ name: category })
       .value();
-    return res.json(item);
+    return res.json({info: [item]});
   }
   next();
 });
